@@ -1,0 +1,141 @@
+.pricing-page{
+    min-height: calc(100vh - 8.5rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10rem 9% 4rem;
+}
+
+.pricing-card{
+    position: relative;
+    overflow: hidden;
+    width: min(100%, 80rem);
+    padding: 4rem;
+    border: 1px solid rgba(126, 96, 175, 0.34);
+    border-radius: 2.4rem;
+    background: linear-gradient(145deg, rgba(20, 14, 31, 0.92), rgba(28, 20, 40, 0.82));
+    box-shadow: 0 24px 50px rgba(0, 0, 0, 0.34), 0 0 34px rgba(84, 54, 128, 0.16);
+    backdrop-filter: blur(8px);
+}
+
+.pricing-card::before,
+.pricing-card::after{
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.pricing-card::before{
+    width: 22rem;
+    height: 22rem;
+    top: -8rem;
+    right: -7rem;
+    background: radial-gradient(circle, rgba(126, 96, 175, 0.28), transparent 70%);
+}
+
+.pricing-card::after{
+    width: 16rem;
+    height: 16rem;
+    bottom: -6rem;
+    left: -5rem;
+    background: radial-gradient(circle, rgba(87, 59, 131, 0.22), transparent 72%);
+}
+
+.pricing-card h1{
+    font-size: 4.8rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.2;
+}
+
+.pricing-tag{
+    display: inline-block;
+    margin-bottom: 1.6rem;
+    padding: 0.7rem 1.4rem;
+    border: 1px solid rgba(126, 96, 175, 0.42);
+    border-radius: 999px;
+    background: rgba(74, 49, 112, 0.24);
+    color: #e2d8f6;
+    font-size: 1.4rem;
+    letter-spacing: 0.16rem;
+    text-transform: uppercase;
+    box-shadow: 0 0 20px rgba(84, 54, 128, 0.12);
+}
+
+.pricing-card ol{
+    padding-left: 2.8rem;
+}
+
+.pricing-card li{
+    font-size: 2rem;
+    line-height: 1.8;
+    margin-bottom: 1.8rem;
+    color: white;
+}
+
+.discord-details{
+    color: rgba(226, 216, 246, 0.82);
+}
+
+.discord-label{
+    color: rgba(180, 154, 224, 0.78);
+    text-transform: uppercase;
+    letter-spacing: 0.08rem;
+    font-size: 1.45rem;
+}
+
+.discord-name,
+.discord-user{
+    color: #f3eefc;
+    font-weight: 600;
+}
+
+.discord-user{
+    text-shadow: 0 0 10px rgba(126, 96, 175, 0.22);
+}
+
+.pricing-note{
+    margin-top: 1.8rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid rgba(126, 96, 175, 0.2);
+    font-size: 1.6rem;
+    line-height: 1.7;
+    color: rgba(241, 234, 252, 0.72);
+}
+
+.pricing-note a{
+    display: inline-block;
+    color: #a88bdc;
+    font-weight: 500;
+    transition: transform 0.25s ease, color 0.25s ease, text-shadow 0.25s ease;
+}
+
+.pricing-note a:hover{
+    transform: scale(1.06);
+    color: #d4c1f8;
+    text-decoration: underline;
+    text-shadow: 0 0 12px rgba(126, 96, 175, 0.34);
+}
+
+@media(max-width:995px){
+    .pricing-page{
+        min-height: calc(100vh - 10rem);
+        padding: 10rem 5% 4rem;
+    }
+
+    .pricing-card{
+        padding: 3rem 2.4rem;
+    }
+
+    .pricing-card h1{
+        font-size: 3.6rem;
+    }
+
+    .pricing-card li{
+        font-size: 1.8rem;
+    }
+
+    .pricing-note{
+        font-size: 1.4rem;
+    }
+}
