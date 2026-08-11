@@ -789,12 +789,27 @@ span{
     letter-spacing: 0.04rem;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+    transition: transform 0.22s ease, border-color 0.22s ease, background 0.22s ease, color 0.22s ease, box-shadow 0.22s ease;
     z-index: 50;
+}
+
+.site-credit:hover{
+    transform: translateY(-2px);
+    border-color: rgba(187, 149, 255, 0.24);
+    background: rgba(18, 13, 29, 0.78);
+    color: rgba(243, 236, 255, 0.9);
+    box-shadow: 0 12px 22px rgba(0, 0, 0, 0.24), 0 0 14px rgba(187, 149, 255, 0.08);
 }
 
 .site-credit i{
     color: rgba(215, 192, 251, 0.88);
     font-size: 1.15rem;
+    transition: color 0.22s ease, transform 0.22s ease;
+}
+
+.site-credit:hover i{
+    color: #f0e2ff;
+    transform: scale(1.08);
 }
 
 @media (max-width: 900px){
